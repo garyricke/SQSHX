@@ -8,7 +8,14 @@ to live on CodePen assets.
 
 | File | Purpose |
 |------|---------|
-| `sqs-dynamic-code-include-v3.js` | Header loader. Loads jQuery (only if not already present), then the dependent SQSHX / QuickVideo / Will-Myers scripts and styles, in order. |
+| `sqs-dynamic-code-include-v3.js` | Header loader. Loads jQuery (only if not already present), then the dependent scripts and styles below, in order. |
+| `sqshx-v3-16jun2025.js` / `.css` | Core SQSHX: section IDs, subhead index, header styling, summary link handling, etc. |
+| `quickvideo-autoload-20231107.js` / `.css` | QuickVideo modal — auto-opens a video from a URL query string. |
+| `quickvideo-3-individual-summary.js` | QuickVideo support for individual summary items. |
+| `sqs-custom-video-button-20231108.js` / `.css` | Custom play-button styling on video summary items. |
+| `sqs-summary-block-arrows-wide-20231108.css` | Wide summary-block carousel arrows. |
+| `sqs-general-style-20231108.css` | Misc. general site styles. |
+| `*.svg` | Play / close-modal button icons used by the QuickVideo and video-button styles. |
 
 ## Usage
 
@@ -25,6 +32,8 @@ automatically on every push to `main`.
 
 - The loader self-guards against running twice and reuses an existing jQuery,
   so jQuery is fetched only once across the header + footer injections.
-- The dependent files it pulls in are still hosted on CodePen
-  (`assets.codepen.io/3457845/...`). They can be migrated into this repo over
-  time; update the URLs in the loader as each one moves.
+- All dependencies have been migrated off CodePen into this repo; the loader
+  and the CSS/JS files now reference `https://sqshx.netlify.app/...`.
+- The only remaining external dependencies are intentional third-party
+  libraries on jsDelivr (jQuery and the Will-Myers plugins: BlogPostBanner,
+  VideoElement, sectionLoader).

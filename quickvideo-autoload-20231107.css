@@ -1,0 +1,70 @@
+/*
+  https://sqshx.netlify.app/quickvideo-20231105.css
+*/
+.sqshx-quickvideo-summary .summary-thumbnail {
+  position: relative;
+}
+.sqshx-quickvideo-summary .play-button {
+  background-image: url("https://sqshx.netlify.app/play-button-squarespace-custom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70px;
+  max-height: 70px;
+  width: 45%;
+  /* Adjust the percentage as needed for mobile scaling */
+  height: 45%;
+  /* Adjust the percentage as needed for mobile scaling */
+  cursor: pointer;
+  z-index: 2;
+}
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .play-button {
+    width: 30%;
+    /* Increase the percentage to scale up the button size for mobile, if necessary */
+    height: 30%;
+    /* Increase the percentage to scale up the button size for mobile, if necessary */
+  }
+}
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-background .modal-content {
+  position: relative;
+  background: #333;
+  padding: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.modal-background .close-button {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 100%;
+  background-image: url("https://sqshx.netlify.app/quick-play-close-modal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 44px;
+  height: 44px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.modal-background .close-button:focus {
+  outline: none;
+}

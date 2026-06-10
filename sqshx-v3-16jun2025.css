@@ -1,0 +1,26 @@
+ul.subheadlinks {
+  padding-left: 1.5rem;
+  text-indent: -0.1rem;
+}
+a.subheadLinksBackToTop {
+  font-size: 12px;
+  height: 40px;
+  padding: 0.5rem;
+  position: absolute;
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  width: 40px;
+  background-repeat: no-repeat !important;
+  background-size: 88% !important;
+  background-position: center !important;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU4IiBoZWlnaHQ9IjI1OCIgdmlld0JveD0iMCAwIDI1OCAyNTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjU4IDEyOUMyNTggMjAwLjI0NSAyMDAuMjQ1IDI1OCAxMjkgMjU4QzU3Ljc1NTMgMjU4IDAgMjAwLjI0NSAwIDEyOUMwIDU3Ljc1NTMgNTcuNzU1MyAwIDEyOSAwQzIwMC4yNDUgMCAyNTggNTcuNzU1MyAyNTggMTI5Wk0xMjkuOTIxIDgzTDIxMS4zNSAxNjQuNDI5TDIwMi42MSAxNzMuMTY4TDEyOS45MzUgMTAwLjQ5M0w1NyAxNzMuNDI5TDQ4LjI2MDIgMTY0LjY4OUwxMjEuMTk1IDkxLjc1MzZMMTIxLjE4MiA5MS43Mzk5TDEyOS45MjEgODNaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K") transparent;
+  visibility: hidden;
+  z-index: 999;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+a.subheadLinksBackToTop.visible {
+  visibility: visible;
+  opacity: 1;
+}

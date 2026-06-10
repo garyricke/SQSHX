@@ -1,0 +1,13 @@
+/* 
+  sqs-general-style
+  https://sqshx.netlify.app/sqs-general-style-20231108.css
+  https://codepen.io/garyricke/pen/mdvWaBr
+*/
+html {
+  scroll-behavior: smooth;
+}
+p a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 3.5px;
+}

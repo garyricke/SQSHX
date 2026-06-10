@@ -1,0 +1,42 @@
+.summary-item.sqs-video .summary-thumbnail.img-wrapper {
+  position: relative;
+}
+.summary-item.sqs-video .summary-thumbnail.img-wrapper:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70px;
+  max-height: 70px;
+  width: 45%;
+  height: 45%;
+  background: url("https://sqshx.netlify.app/play-button-squarespace-custom.svg") no-repeat center center / contain;
+  cursor: pointer;
+  z-index: 9;
+}
+@media (max-width: 767px) {
+  .summary-item.sqs-video .summary-thumbnail.img-wrapper:after {
+    width: 30%;
+    height: 30%;
+  }
+}
+.sqs-video-wrapper .sqs-video-overlay .sqs-video-icon {
+  background: url("https://sqshx.netlify.app/play-button-squarespace-custom.svg") no-repeat center center / contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70px;
+  max-height: 70px;
+  width: 45%;
+  height: 45%;
+  cursor: pointer;
+  z-index: 9;
+}
+@media (max-width: 767px) {
+  .sqs-video-icon {
+    width: 30%;
+    height: 30%;
+  }
+}

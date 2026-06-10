@@ -1,0 +1,23 @@
+/* sqs-summary-block-arrows-wide */
+/* Summary block carousel arrows */
+.summary-heading {
+  width: 90% !important;
+}
+.summary-carousel-pager {
+  width: 105px !important;
+}
+.summary-carousel-pager span {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  padding: 6px !important;
+}
+.summary-carousel-pager span:before {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  margin-left: -7px;
+  padding: 10px;
+}
+/* wide summaries */
+.fe-block .summary-v2-block.sqs-block-summary-v2 .sqs-block-content {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
