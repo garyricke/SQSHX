@@ -15,11 +15,11 @@ to live on CodePen assets.
 Reference the hosted file from the Squarespace **Code Injection → Header**:
 
 ```html
-<script src="https://YOUR-NETLIFY-SITE/sqs-dynamic-code-include-v3.js"></script>
+<script src="https://sqshx.netlify.app/sqs-dynamic-code-include-v3.js"></script>
 ```
 
-Replace `YOUR-NETLIFY-SITE` with the Netlify domain (or custom domain) once
-the site is connected to this repo.
+Served via Netlify (site: https://sqshx.netlify.app/), which deploys
+automatically on every push to `main`.
 
 ## Notes
 

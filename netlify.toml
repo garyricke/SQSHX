@@ -1,0 +1,26 @@
+# Netlify configuration for the SQSHX repo.
+# Static files only — no build step.
+
+[build]
+  # Serve the files straight from the repo root.
+  publish = "."
+  command = ""
+
+# Cache + CORS for JS files.
+# These are referenced from Squarespace at a fixed filename (no cache-busting
+# hash), so we keep a short max-age + revalidation while files are still being
+# migrated/edited. Raise max-age once a file is stable.
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+    Cache-Control = "public, max-age=300, must-revalidate"
+    Access-Control-Allow-Origin = "*"
+
+# Cache + CORS for CSS files (for when stylesheets move here too).
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
+    Cache-Control = "public, max-age=300, must-revalidate"
+    Access-Control-Allow-Origin = "*"
